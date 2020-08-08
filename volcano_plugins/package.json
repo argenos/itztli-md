@@ -1,0 +1,21 @@
+{
+  "name": "iztli",
+  "version": "0.1.0",
+  "description": "Fuzzy dates for Obsidian",
+  "main": "fuzzy-date.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d build",
+    "build:watch": "nodemon --ignore build/ --ignore node_modules/ --exec 'babel src -d build'"
+  },
+  "author": "A. Ortega",
+  "license": "MIT",
+  "dependencies": {
+    "chrono-node": "^2.1.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0"
+  }
+}
