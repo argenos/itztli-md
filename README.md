@@ -24,3 +24,9 @@ The only behaviours I changed were the following:
 |   end of [month]    |  last day of the month     |
 
 If a date is not recognized, the link won't be created.
+
+### To-do toggle
+
+Use the `CTRL + M` hotkey to toggle the status of the selected to-do or the line the cursor is in.
+
+![toggle-todos](https://user-images.githubusercontent.com/5426039/89807985-b1278f00-db39-11ea-9cc1-7fc26fab6fd8.gif)
