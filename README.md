@@ -6,6 +6,22 @@ This repository contains the theme, tools and plugins that I develop for my use 
 
 ## [Volcano](https://github.com/kognise/volcano) plugins
 
+After setting up Volcano and cloning this repository use:
+
+```bash
+cd volcano_plugins
+npm install
+npm run build
+
+```
+
+The plugins must be in `~/volcano/plugins` as mentioned [here](https://github.com/kognise/volcano). Make sure you symlink using the path where you cloned this repo.
+
+```bash
+mkdir -p ~/volcano/plugins
+ln -s ~/your/path/here/itztli-md/volcano_plugins/build/todo-toggler.js ~/volcano/plugins/
+```
+
 ### Fuzzy dates
 
 Create date links using natural language processing using [chrono](https://github.com/wanasit/chrono) and some custom parsing.
@@ -13,7 +29,7 @@ To create a date link, select the text you want to change (e.g. `today`), and us
 
 ![fuzzy-dates](https://user-images.githubusercontent.com/5426039/89716767-1d768700-d9b0-11ea-99cf-b3bb6846a872.gif)
 
-You can try with any of the standard dates, i.e. today, tomorrow, in 3 weeks, in 5 months, etc. 
+You can try with any of the standard dates, i.e. today, tomorrow, in 3 weeks, in 5 months, etc.
 The only behaviours I changed were the following:
 
 | Write | Date |
