@@ -57,10 +57,6 @@ class FuzzyDatePlugin {
     var lastDayOfMatch = selectedText.match(/(last day of|end of)\s*([^\n\r]*)/i);
     var midOf = selectedText.match(/mid\s([\w]+)/i);
 
-    console.log(nextDateMatch);
-    console.log(lastDayOfMatch);
-    console.log(midOf);
-
     if (nextDateMatch && nextDateMatch[1] === "week"){
       return custom.parseDate("next monday", new Date(), {forwardDate: true});
     }
